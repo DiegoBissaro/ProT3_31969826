@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 31-07-2024 a las 06:23:43
+-- Tiempo de generación: 31-07-2024 a las 16:05:13
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `bissaro_d`
 --
+CREATE DATABASE IF NOT EXISTS `bissaro_d` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `bissaro_d`;
 
 -- --------------------------------------------------------
 
@@ -66,7 +68,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `cuit`, `nombreyapellido`, `usuario`, `email`, `pass`, `perfil_id`, `baja`) VALUES
-(1, '20-37771710-5', 'DIEGO BISSARO', 'diemar.ciudad@gmail.', '', '$2y$10$XoXAHTccMzz6TJt.yDKGPuMQskZ.IEKOhZhL3mNnN3sCfCPTcSZQK', 2, 'NO'),
+(1, '20-37771710-5', 'DIEGO BISSARO', 'diemar.ciudad@gmail.', '', '$2y$10$XoXAHTccMzz6TJt.yDKGPuMQskZ.IEKOhZhL3mNnN3sCfCPTcSZQK', 1, 'NO'),
 (2, '20-37771710-3', 'DIEGO BISSARO2', 'diemar.ciudad2@gmail', '', '$2y$10$Oya8H4kcn65kFRfRgZzd4uJHAFUn8.iV3Tt1hdBfxQ3do/sEB7lLm', 2, 'NO'),
 (3, '20319698265', 'DIEGOBISSARO3', '32762171', '', '$2y$10$.yCXeOb.rWUkMh70mnb.B.yAO8Zr301QcxH25tc3cqTEp8nnMDp3a', 2, 'NO'),
 (4, '20319698265', 'ABC', 'die3mar.ciudad@gmail', '', '$2y$10$i..UhqvbJSjouELgMsQru.RoInlUh6syQSiAbma05y/xgTQ8TThO2', 2, 'NO'),
@@ -74,7 +76,8 @@ INSERT INTO `usuarios` (`id_usuario`, `cuit`, `nombreyapellido`, `usuario`, `ema
 (6, '10969867099', 'YANINAGOMEZ', 'yani_gomez', '', '$2y$10$AmVmc9w6P4rMUJdCR9YPnOrOBJrF5DTc3s7uI3SOkmsT1iWvxAv/2', 2, 'NO'),
 (7, '1234567899', 'LUIS MARCELO', 'luis_marcelo', '', '$2y$10$xBfpgoQNFS6SdgO7tO0rZ.4njAewEIjY6hI35Hfg1pfF8fLjBfFKO', 2, 'NO'),
 (8, '20319698880', 'GRACIELA GALARZA', 'graciela_gal', '', '$2y$10$D6Ld5mbhfNVv2gTVzxUpgODL.50dtdrsseo7tXtQV1ye38wNhx9A.', 2, 'NO'),
-(9, '20551148260', 'JOAQUIN GALARZA', 'joaquin_galarza', '', '$2y$10$ywypbiBKikM/XrhasG00m.62741VbbORilM.wZjEjwGqjIRx4cs0.', 2, 'NO');
+(9, '20551148260', 'JOAQUIN GALARZA', 'joaquin_galarza', '', '$2y$10$ywypbiBKikM/XrhasG00m.62741VbbORilM.wZjEjwGqjIRx4cs0.', 2, 'NO'),
+(10, '20-333333-20', 'GABY LOCO', 'gaby_loco', '', '$2y$10$ECfD1ajYPD83qDoFdttcwe7M8k3iCAZDlplIU.Knjpj900q4DSyQ6', 2, 'NO');
 
 --
 -- Índices para tablas volcadas
@@ -106,7 +109,7 @@ ALTER TABLE `perfiles`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
