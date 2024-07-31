@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 31-07-2024 a las 00:19:33
+-- Tiempo de generación: 31-07-2024 a las 06:23:43
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -26,6 +26,8 @@ SET time_zone = "+00:00";
 --
 -- Estructura de tabla para la tabla `perfiles`
 --
+-- Creación: 13-07-2024 a las 23:22:01
+--
 
 CREATE TABLE `perfiles` (
   `id_perfiles` int(11) NOT NULL,
@@ -44,6 +46,8 @@ INSERT INTO `perfiles` (`id_perfiles`, `descripcion`) VALUES
 
 --
 -- Estructura de tabla para la tabla `usuarios`
+--
+-- Creación: 19-07-2024 a las 23:17:06
 --
 
 CREATE TABLE `usuarios` (
